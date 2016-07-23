@@ -1,13 +1,17 @@
-﻿<h1>연습입니다.</h1>
-//자기부분내용만수정해보기 충돌 없게끔
-<h2>창환부분 = 수정해보았습니다</h2>
+<div class="container" style="margin-top:30px">
+  <% @posts.each do |post| %>
+    <p><%= post.title %></p>
+    <p><%= post.po_content %></p>
+    <p><%= post.created_at %></p>
+  <% end %>
 
-<h2>실수형부분</h2>
-수정중
-07. 21 18:57
-
-<h2>상영형부분</h2>
-수정되어주세요제발
-제발이번엔제발
-
-<h2>침사추이누나부분</h2>
+  <form action="/index/create" method="POST" >
+    <div class="form-group">
+      <input type="text" class="form-control" name="title" placeholder="제목">
+    </div>
+    <div class="form-group">
+      <textarea name="content" class="form-control" rows="10"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
