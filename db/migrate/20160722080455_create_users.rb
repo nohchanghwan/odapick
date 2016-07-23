@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration
         t.string :gender
         t.datetime :birth
         t.string :job
-        joined_at :datetime
+        t.datetime :joined_at
       t.timestamps null: false
     end
   end

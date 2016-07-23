@@ -7,6 +7,13 @@
 07. 21 18:57
 수정2
 07. 22 18:47
+﻿
+<div class="container" style="margin-top:30px">
+  <% @posts.each do |post| %>
+    <p><%= post.title %></p>
+    <p><%= post.po_content %></p>
+    <p><%= post.created_at %></p>
+  <% end %>
 
 <h2>상영형부분</h2>
 수정되어주세요제발
@@ -14,3 +21,14 @@
 
 <h2>침사추이누나부분</h2>
 7.23 07:29 완료
+  <form action="/index/create" method="POST" >
+    <div class="form-group">
+      <input type="text" class="form-control" name="title" placeholder="제목">
+    </div>
+    <div class="form-group">
+      <textarea name="content" class="form-control" rows="10"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+>>>>>>> f0ff19d90cacbb7e6f2db9107803cbc8c881e3ce
