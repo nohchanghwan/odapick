@@ -73,11 +73,11 @@
                         <a class="nav-trigger" data-toggle="collapse" href="#primary-nav" aria-expanded="false" aria-controls="primary-nav"><i class="fa fa-navicon"></i></a>
                     </div>
                     <!--end left-->
-                    <div class="right">
+                    <div class="right" >
                         <nav id="primary-nav">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">About Us</a></li>
+                                <li class="active"><a href="about-us.html">About Us</a></li>
                                 <li>
                                     <a href="#" class="has-child">Listing</a>
                                     <ul class="child-nav">
@@ -85,7 +85,7 @@
                                         <li><a href="listing-matrix.html">Matrix Listing</a></li>
                                     </ul>
                                 </li>
-                                <li class="active">
+                                <li>
                                     <a href="#" class="has-child">Pages</a>
                                     <ul class="child-nav">
                                         <li><a href="404.html">404</a></li>
@@ -139,39 +139,158 @@
                 <li class="active">Detail</li>
             </ol>
             <!--end breadcrumb-->
-            <div class="main-content">
-                <div class="title">
-                    <h1>404</h1>
-                </div>
-                <!--end title-->
-                <div class="error-message">
-                    <h2>404</h2>
-                    <div class="message">
-                        <h3>Page not found</h3>
-                    </div>
-                </div>
-                <!--end error-message-->
-                <form class="labels-uppercase">
-                    <div class="row">
-                        <div class="col-md-4 col-md-offset-4">
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <div class="form-group">
-
-                                        <input type="search" class="form-control" id="search" name="search" placeholder="Enter Search Keyword">
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary ">Search</button>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sidebar">
+                        <div class="box filter">
+                            <h2>About Us</h2>
+                            <ul class="links">
+                                <li class="active"><a href="about-us.html">About Us</a></li>
+                                <li><a href="become-an-affiliate.html">Become an Affiliate</a></li>
+                                <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                            </ul>
                         </div>
+                        <!--end filter-->
                     </div>
-                </form>
+                    <!--end sidebar-->
+                </div>
+                <!--end col-md-3-->
+                <div class="col-md-9">
+                    <div class="main-content">
+                        <div class="title">
+                            <h1>About Us</h1>
+                        </div>
+                        <!--end title-->
+                        <section>
+                            <h2>What is Accommodo?</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel magna vulputate magna
+                                semper laoreet ac eu sapien. Donec blandit nulla eu lacus convallis faucibus. Etiam ut efficitur
+                                velit, dictum volutpat ante. Integer hendrerit turpis porta neque efficitur, sed efficitur libero
+                                lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse non ex id
+                                sapien venenatis mattis. Nam facilisis molestie pulvinar. Morbi tincidunt, eros sit amet imperdiet
+                                finibus, velit sapien rutrum enim, consectetur dictum diam massa eu nibh. Sed aliquam ut orci eget
+                                dictum. Sed consectetur sem sit amet metus tempor condimentum. In nec semper ante, mattis placerat lacus.
+                            </p>
+                            <p>
+                                Sed eu dui nisl. Suspendisse at massa dictum odio lacinia semper ut eu odio. Etiam viverra,
+                                nunc at sagittis convallis, tortor dolor volutpat purus, a mollis nunc arcu eget nulla. Mauris
+                                gravida nibh nec suscipit rutrum. Vestibulum commodo lacus vulputate, ultrices ligula at,
+                                posuere augue. Proin fermentum mattis sem vel ultrices. Donec porta turpis non hendrerit porttitor.
+                            </p>
+                        </section>
+                        <section>
+                            <h2>Our Team</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="member">
+                                        <div class="image"><img src="assets/img/person-01.jpg" alt=""></div>
+                                        <div class="description">
+                                            <h3>Kate Brown</h3>
+                                            <h4>Company CEO</h4>
+                                            <div class="info">
+                                                <dl>
+                                                    <dt>Phone:</dt>
+                                                    <dd>(123) 456 789</dd>
+                                                    <dt>Mobile Phone:</dt>
+                                                    <dd>888 123 456 789</dd>
+                                                    <dt>Email:</dt>
+                                                    <dd><a href="mailto:kate.brown@example.com">kate.brown@example.com</a></dd>
+                                                    <dt>Skype:</dt>
+                                                    <dd>kate.brown</dd>
+                                                </dl>
+                                            </div>
+                                            <!--end info-->
+                                        </div>
+                                        <!--end description-->
+                                    </div>
+                                    <!--member-->
+                                </div>
+                                <!--col-md-6-->
+                                <div class="col-md-6">
+                                    <div class="member">
+                                        <div class="image"><img src="assets/img/person-02.jpg" alt=""></div>
+                                        <div class="description">
+                                            <h3>Jone Doe</h3>
+                                            <h4>PR Manager</h4>
+                                            <div class="info">
+                                                <dl>
+                                                    <dt>Phone:</dt>
+                                                    <dd>(123) 456 789</dd>
+                                                    <dt>Mobile Phone:</dt>
+                                                    <dd>888 123 456 789</dd>
+                                                    <dt>Email:</dt>
+                                                    <dd><a href="mailto:kate.brown@example.com">kate.brown@example.com</a></dd>
+                                                    <dt>Skype:</dt>
+                                                    <dd>kate.brown</dd>
+                                                </dl>
+                                            </div>
+                                            <!--end info-->
+                                        </div>
+                                        <!--end description-->
+                                    </div>
+                                    <!--member-->
+                                </div>
+                                <!--col-md-6-->
+                                <div class="col-md-6">
+                                    <div class="member">
+                                        <div class="image"><img src="assets/img/person-03.jpg" alt=""></div>
+                                        <div class="description">
+                                            <h3>Kate Brown</h3>
+                                            <h4>Marketing Guru</h4>
+                                            <div class="info">
+                                                <dl>
+                                                    <dt>Phone:</dt>
+                                                    <dd>(123) 456 789</dd>
+                                                    <dt>Mobile Phone:</dt>
+                                                    <dd>888 123 456 789</dd>
+                                                    <dt>Email:</dt>
+                                                    <dd><a href="mailto:kate.brown@example.com">kate.brown@example.com</a></dd>
+                                                    <dt>Skype:</dt>
+                                                    <dd>kate.brown</dd>
+                                                </dl>
+                                            </div>
+                                            <!--end info-->
+                                        </div>
+                                        <!--end description-->
+                                    </div>
+                                    <!--member-->
+                                </div>
+                                <!--col-md-6-->
+                                <div class="col-md-6">
+                                    <div class="member">
+                                        <div class="image"><img src="assets/img/person-04.jpg" alt=""></div>
+                                        <div class="description">
+                                            <h3>John Doe</h3>
+                                            <h4>Support Ninja</h4>
+                                            <div class="info">
+                                                <dl>
+                                                    <dt>Phone:</dt>
+                                                    <dd>(123) 456 789</dd>
+                                                    <dt>Mobile Phone:</dt>
+                                                    <dd>888 123 456 789</dd>
+                                                    <dt>Email:</dt>
+                                                    <dd><a href="mailto:kate.brown@example.com">kate.brown@example.com</a></dd>
+                                                    <dt>Skype:</dt>
+                                                    <dd>kate.brown</dd>
+                                                </dl>
+                                            </div>
+                                            <!--end info-->
+                                        </div>
+                                        <!--end description-->
+                                    </div>
+                                    <!--member-->
+                                </div>
+                                <!--col-md-6-->
+                            </div>
+                            <!--end row-->
+                        </section>
+                    </div>
+                    <!--end main-content-->
+                </div>
+                <!--end col-md-9-->
             </div>
-            <!--end main-content-->
+            <!--end row-->
         </div>
         <!--end container-->
     </div>
@@ -224,11 +343,15 @@
 </div>
 <!--end page-wrapper-->
 <a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
-
 <script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script>
 <script type="text/javascript" src="assets/js/icheck.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.js"></script>
+<script type="text/javascript" src="assets/js/masonry.pkgd.min.js"></script>
 
 <script type="text/javascript" src="assets/js/maps.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
