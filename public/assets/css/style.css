@@ -22,8 +22,8 @@ color-neutral: #f6f6f4;
 
 [Typography]
 
-Body copy:		'Lato', sans-serif; 14px;
-Headers:		'Lato', sans-serif;
+Body copy:		'Noto Sans Korean', sans-serif; 14px;
+Headers:		'Noto Sans Korean', sans-serif;
 
 -------------------------------------------------------------------*/
 /* 1. Header */
@@ -358,8 +358,8 @@ a.icon i {
 body {
   background-color: #f6f6f4;
   color: #1f1f1f;
-  font-size: 14px;
-  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-family: 'Noto Sans Korean', sans-serif;
   position: relative;
 }
 
