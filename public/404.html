@@ -1,67 +1,239 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en-US">
 <head>
-  <title>The page you were looking for doesn't exist (404)</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-  body {
-    background-color: #EFEFEF;
-    color: #2E2F30;
-    text-align: center;
-    font-family: arial, sans-serif;
-    margin: 0;
-  }
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ThemeStarz">
 
-  div.dialog {
-    width: 95%;
-    max-width: 33em;
-    margin: 4em auto 0;
-  }
+    <link href="assets/fonts/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="assets/fonts/elegant-fonts.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/zabuto_calendar.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 
-  div.dialog > div {
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #BBB;
-    border-top: #B00100 solid 4px;
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
-    background-color: white;
-    padding: 7px 12% 0;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
+    <title>Accommodo - Accommodation HTML Template Full of Useful Features</title>
 
-  h1 {
-    font-size: 100%;
-    color: #730E15;
-    line-height: 1.5em;
-  }
-
-  div.dialog > p {
-    margin: 0 0 1em;
-    padding: 1em;
-    background-color: #F7F7F7;
-    border: 1px solid #CCC;
-    border-right-color: #999;
-    border-left-color: #999;
-    border-bottom-color: #999;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-color: #DADADA;
-    color: #666;
-    box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
-  }
-  </style>
 </head>
 
 <body>
-  <!-- This file lives in public/404.html -->
-  <div class="dialog">
-    <div>
-      <h1>The page you were looking for doesn't exist.</h1>
-      <p>You may have mistyped the address or the page may have moved.</p>
+<div class="page-wrapper">
+    <div id="page-header">
+        <header>
+            <div class="container">
+                <div class="secondary-nav">
+                    <div class="nav-trigger"><a data-toggle="collapse" href="#secondary-nav" aria-expanded="false" aria-controls="secondary-nav"><i class="fa fa-user"></i></a></div>
+                    <div id="secondary-nav">
+                        <nav>
+                            <div class="left opacity-60">
+                                <a href=""><i class="fa fa-phone"></i>+1 781-903-1047</a>
+                                <a href="mailto:hello@example.com"><i class="fa fa-envelope"></i>hello@example.com</a>
+                            </div>
+                            <!--end left-->
+                            <div class="right">
+                                <div class="element">
+                                    <select>
+                                        <option>$</option>
+                                        <option>€</option>
+                                    </select>
+                                </div>
+                                <!--end element-->
+                                <div class="element">
+                                    <a href="#tab-sign-in" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Sign In</a>
+                                </div>
+                                <!--end element-->
+                                <div class="element">
+                                    <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Register</a>
+                                </div>
+                                <!--end element-->
+                                <div class="element">
+                                    <select>
+                                        <option>EN</option>
+                                        <option>DE</option>
+                                        <option>RU</option>
+                                        <option>ES</option>
+                                    </select>
+                                </div>
+                                <!--end element-->
+                            </div>
+                            <!--end right-->
+                        </nav>
+                    </div>
+                </div>
+                <!--end secondary-nav-->
+            </div>
+            <!--end container-->
+            <hr>
+            <div class="container">
+                <div class="primary-nav">
+                    <div class="left">
+                        <a href="index.html" id="brand"><img src="assets/img/logo.png" alt=""></a>
+                        <a class="nav-trigger" data-toggle="collapse" href="#primary-nav" aria-expanded="false" aria-controls="primary-nav"><i class="fa fa-navicon"></i></a>
+                    </div>
+                    <!--end left-->
+                    <div class="right">
+                        <nav id="primary-nav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li>
+                                    <a href="#" class="has-child">Listing</a>
+                                    <ul class="child-nav">
+                                        <li><a href="listing.html">List Listing</a></li>
+                                        <li><a href="listing-matrix.html">Matrix Listing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active">
+                                    <a href="#" class="has-child">Pages</a>
+                                    <ul class="child-nav">
+                                        <li><a href="404.html">404</a></li>
+                                        <li>
+                                            <a href="#" class="has-child">Admin</a>
+                                            <ul class="child-nav">
+                                                <li><a href="edit.html">Edit Accommodation</a></li>
+                                                <li><a href="my-accommodations.html">My Accommodations</a></li>
+                                                <li><a href="profile.html">Profile</a></li>
+                                                <li><a href="reservations.html">Reservations</a></li>
+                                                <li><a href="reviews.html">Reviews</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="detail.html">Accommodation Detail</a></li>
+                                        <li><a href="become-an-affiliate.html">Become an Affiliate</a></li>
+                                        <li>
+                                            <a href="#" class="has-child">Blog</a>
+                                            <ul class="child-nav">
+                                                <li><a href="blog.html">Blog Listing</a></li>
+                                                <li><a href="blog-detail.html">Blog Detail</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="faq.html">FAQ</a></li>
+                                        <li><a href="grid.html">Grid</a></li>
+                                        <li><a href="sticky-footer.html">Sticky Footer</a></li>
+                                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li class="submit"><a href="submit.html"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="assets/img/plus.png" alt=""></i></a></li>
+                            </ul>
+                        </nav>
+                        <!--end nav-->
+                    </div>
+                    <!--end right-->
+                </div>
+                <!--end primary-nav-->
+            </div>
+            <!--end container-->
+        </header>
+        <!--end header-->
     </div>
-    <p>If you are the application owner check the logs for more information.</p>
-  </div>
+    <!--end page-header-->
+
+    <div id="page-content">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Listing</a></li>
+                <li class="active">Detail</li>
+            </ol>
+            <!--end breadcrumb-->
+            <div class="main-content">
+                <div class="title">
+                    <h1>404</h1>
+                </div>
+                <!--end title-->
+                <div class="error-message">
+                    <h2>404</h2>
+                    <div class="message">
+                        <h3>Page not found</h3>
+                    </div>
+                </div>
+                <!--end error-message-->
+                <form class="labels-uppercase">
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="form-group">
+
+                                        <input type="search" class="form-control" id="search" name="search" placeholder="Enter Search Keyword">
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary ">Search</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--end main-content-->
+        </div>
+        <!--end container-->
+    </div>
+    <!--end page-content-->
+
+    <footer id="page-footer">
+        <div class="row-one">
+            <div class="container">
+                <div class="logos">
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo-1.png" alt=""></a>
+                    </div>
+                    <!--/ .logo-->
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo-2.png" alt=""></a>
+                    </div>
+                    <!--/ .logo-->
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo-3.png" alt=""></a>
+                    </div>
+                    <!--/ .logo-->
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo-4.png" alt=""></a>
+                    </div>
+                    <!--/ .logo-->
+                    <div class="logo">
+                        <a href="#"><img src="assets/img/logo-5.png" alt=""></a>
+                    </div>
+                    <!--/ .logo-->
+                </div>
+                <!--/ .logos-->
+            </div>
+        </div>
+        <!--end row-one-->
+        <div class="row-two clearfix">
+            <div class="container">
+                <div class="copyright pull-left">(C) 2016 Your Company, All Rights Reserved</div>
+                <div class="footer-nav pull-right">
+                    <a href="index.html">Home</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="listing.html">Listing</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="bg-transfer"><img src="assets/img/footer-bg.jpg" alt=""></div>
+        </div>
+        <!--end row-two-->
+    </footer>
+    <!--end page-footer-->
+</div>
+<!--end page-wrapper-->
+<a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
+
+<script type="text/javascript" src="assets/js/jquery-2.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/icheck.min.js"></script>
+
+<script type="text/javascript" src="assets/js/maps.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+<!--[if lte IE 9]>
+<script src="assets/js/ie.js"></script>
+<![endif]-->
 </body>
-</html>
