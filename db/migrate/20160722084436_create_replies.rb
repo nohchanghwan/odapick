@@ -1,9 +1,13 @@
 class CreateReplies < ActiveRecord::Migration
   def change
     create_table :replies do |t|
+
+
         t.integer :present_point
-        t.text :re_content
+        t.text :content
+        t.integer :post_id
       t.timestamps null: false
+
     end
   end
 end
