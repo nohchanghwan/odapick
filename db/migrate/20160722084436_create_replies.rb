@@ -2,7 +2,6 @@ class CreateReplies < ActiveRecord::Migration
   def change
     create_table :replies do |t|
 
-
         t.integer :present_point
         t.text :content
         t.integer :post_id

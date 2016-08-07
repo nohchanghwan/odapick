@@ -1,28 +1,50 @@
 <div class="container" style="margin-top:30px">
-  <!--게시글부분-->
-  <form action="/board/create" method="POST" >
-    <div class="form-group">
-        <input type="text" class="form-control" name="title" placeholder="제목">
-    </div>
-    <div class="form-group">
-        <textarea name="content" class="form-control" rows="10"></textarea>
-    </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-  </form><br>
+  <!--게시글부분---------------------------------------------------------------->
+    <form action="/board/create" method="POST" >
+      <div class="form-group">
+          <input type="text" class="form-control" name="title" placeholder="제목"><br>
+          <input type="text" class="form-control" name= "url" placeholder="url 을적어주세요">
+      </div>
+      <div class="form-group">
+          <textarea name="content" class="form-control" rows="10"></textarea>
+      </div>
+          <select multiple class="form-control" name="anniday">
+            <option>여자친구생일</option>
+            <option>남자친구생일</option>
+            <option>애인과의기념일</option>
+            <option>돌잔치</option>
+            <option>시댁선물</option>
+          </select>
+          <input type="file" name="pic" accept="image/*">
+          <button type="submit" class="btn btn-default">Submit</button>
+    </form><br>
 
-  <!--모든게시판글을 하나씩 뽑는코드-->
+          <!--모든게시판글을 하나씩 뽑는코드----->
   <% @posts.each do |post| %>
-    <span style="font-weight:bold;">
-    <p><%= post.title %></p></span>
-    <p><%= post.po_content %></p>
-       <!--댓글나오는부분-->
+            <span style="font-weight:bold;">
+            <p><%=post.avg_point %><%= post.title %></p></span>
+            <p><%= post.url %> <%= post.anniversary%></p>
+            <p><%= post.po_content %></p>
+
+
+  <!---댓글------------------------------------------------------------------->
        <% post.replies.each do|r| %>
-    <p><%= r.content %></p>
+    <p><%=r.present_point%>점 <%= r.content %> <%= r.updated_at %></p>
        <% end %>
        <form style="margin-top:10px" action="/board/reply_create" method="POST">
+
+            <select name="point">
+                <option value="">별점</option>
+                <option value="1">1점</option>
+                <option value="2">2점</option>
+                <option value="3">3점</option>
+                <option value="4">4점</option>
+                <option value="5">5점</option>
+            </select>
+
             <!--밑에줄은 글번호를 히든으로 숨겨서보이지않게하는 자주쓰이는스킬이다.-->
             <input type="hidden" value="<%=post.id%>" name="post_of_re">
-            <input type="text" class="form-control" name="content_of_re" placeholder="내용입력..">
+            <textarea rows="3" class="form-control" name="content_of_re" placeholder="내용입력.."></textarea>
             <button type="submit" class="btn btn-default">댓글쓰기</button>
        </form>
     <p><%= post.created_at %></p>

@@ -4,8 +4,8 @@ class CreatePosts < ActiveRecord::Migration
         t.string :title
         t.text :po_content
         t.string :url
+        t.string :image , default: ""
         t.integer :avg_point
-        t.string :image
         t.string :anniversary
         t.datetime :posted_at
       t.timestamps null: false

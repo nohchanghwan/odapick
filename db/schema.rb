@@ -17,12 +17,12 @@ ActiveRecord::Schema.define(version: 20160722084436) do
     t.string   "title"
     t.text     "po_content"
     t.string   "url"
+    t.string   "image",       default: ""
     t.integer  "avg_point"
-    t.string   "image"
     t.string   "anniversary"
     t.datetime "posted_at"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "replies", force: :cascade do |t|
