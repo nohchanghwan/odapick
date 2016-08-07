@@ -2982,7 +2982,7 @@ ul.half li {
 }
 
 .one-item-carousel {
-  display: none;
+  display: block;
 }
 
 .owl-carousel .owl-item img {
@@ -5294,4 +5294,19 @@ body::before {
     position: relative;
     text-align: center;
   }
+}
+
+.checkbox-inline,
+.checkbox-inline + .checkbox-inline,
+.checkbox-inline + .radio-inline,
+.radio-inline,
+.radio-inline + .radio-inline,
+.radio-inline + .checkbox-inline {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.checkbox-inline:last-child,
+.radio-inline:last-child {
+    margin-right: 0;
 }
