@@ -10,6 +10,13 @@ Rails.application.routes.draw do
    post 'board/create'
 
    post 'board/reply_create'
+
+  #UserController
+  post 'user/join'
+  get 'user/getList'
+  post 'user/update'
+  get 'user/destroy'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
