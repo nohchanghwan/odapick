@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20160722084436) do
     t.string   "image",       default: ""
     t.integer  "avg_point"
     t.string   "anniversary"
+    t.string   "age_group"
+    t.string   "gift_gender"
     t.datetime "posted_at"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
@@ -27,7 +29,7 @@ ActiveRecord::Schema.define(version: 20160722084436) do
 
   create_table "replies", force: :cascade do |t|
     t.integer  "present_point"
-    t.text     "content"
+    t.text     "re_content"
     t.integer  "post_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false

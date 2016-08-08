@@ -8,13 +8,27 @@
       <div class="form-group">
           <textarea name="content" class="form-control" rows="10"></textarea>
       </div>
-          <select multiple class="form-control" name="anniday">
-            <option>여자친구생일</option>
-            <option>남자친구생일</option>
-            <option>애인과의기념일</option>
-            <option>돌잔치</option>
-            <option>시댁선물</option>
-          </select>
+      <label class="radio-inline">
+          <input type="radio" name="giftgender" id="inlineRadio1" value="남"> 남 </label>
+          <input type="radio" name="giftgender" id="inlineRadio2" value="녀"> 여
+      </label><br>
+      <label class="radio-inline">
+          <input type="radio" name="anniday" id="inlineRadio1" value="연인"> 연인 </label>
+          <input type="radio" name="anniday" id="inlineRadio2" value="친구"> 친구
+          <input type="radio" name="anniday" id="inlineRadio3" value="가족"> 가족
+          <input type="radio" name="anniday" id="inlineRadio3" value="스승"> 스승
+          <input type="radio" name="anniday" id="inlineRadio3" value="생일"> 생일
+          <input type="radio" name="anniday" id="inlineRadio3" value="원수"> 원수
+      </label><br>
+      <label class="radio-inline">
+          <input type="radio" name="agegroup" id="inlineRadio1" value="유아"> 유아</label>
+          <input type="radio" name="agegroup" id="inlineRadio2" value="10대"> 10대
+          <input type="radio" name="agegroup" id="inlineRadio3" value="20대"> 20대
+          <input type="radio" name="agegroup" id="inlineRadio3" value="30대"> 30대
+          <input type="radio" name="agegroup" id="inlineRadio3" value="40대"> 40대
+          <input type="radio" name="agegroup" id="inlineRadio3" value="50대"> 50대
+          <input type="radio" name="agegroup" id="inlineRadio3" value="60대이상"> 60대이상
+      </label>
           <input type="file" name="pic" accept="image/*">
           <button type="submit" class="btn btn-default">Submit</button>
     </form><br>
@@ -29,7 +43,7 @@
 
   <!---댓글------------------------------------------------------------------->
        <% post.replies.each do|r| %>
-    <p><%=r.present_point%>점 <%= r.content %> <%= r.updated_at %></p>
+    <p><%=r.present_point%>점 <%= r.re_content %> <%= r.updated_at %></p>
        <% end %>
        <form style="margin-top:10px" action="/board/reply_create" method="POST">
 

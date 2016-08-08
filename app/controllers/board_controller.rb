@@ -6,14 +6,20 @@ class BoardController < ApplicationController
     end
 
     def create #강호형스타일코딩
-      @post = Post.new(title: params[:title],po_content: params[:content],
-                      url: params[:url],anniversary: params[:anniday])
+      @post = Post.new(title:       params[:title],
+                       po_content:  params[:content],
+                       url:         params[:url],
+                       anniversary: params[:anniday],
+                       age_group:   params[:agegroup],
+                       gift_gender: params[:giftgender]
+                       )
       if @post.save #일반적인경우
        redirect_to :back
      else #만약 텍스트가없다면 에러메세지
        render :text => post.error.messages
       end
     end
+
 
     def edit
     end
@@ -27,7 +33,7 @@ class BoardController < ApplicationController
     def reply_create #두희대장스타일코딩
       @replies = Reply.all.order("id desc")
       reply = Reply.new
-      reply.content = params[:content_of_re] #뒤에콘텐츠는 index 에서의 name값이다.
+      reply.re_content = params[:content_of_re] #뒤에콘텐츠는 index 에서의 name값이다.
       reply.post_id = params[:post_of_re]
       reply.present_point = params[:point]
       reply.save

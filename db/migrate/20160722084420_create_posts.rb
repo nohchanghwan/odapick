@@ -7,6 +7,8 @@ class CreatePosts < ActiveRecord::Migration
         t.string :image , default: ""
         t.integer :avg_point
         t.string :anniversary
+        t.string :age_group
+        t.string :gift_gender
         t.datetime :posted_at
       t.timestamps null: false
     end
