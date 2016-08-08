@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   #BoardController
   get "gift_list" => 'board#gift_list'
+  get "detail" => 'board#detail'
 
   get 'board/index'
   post 'board/create'
@@ -19,6 +20,7 @@ Rails.application.routes.draw do
   post 'board/reply_create'
 
   #UserController
+  get "join_form" => 'user#join_form'
   post 'user/join'
   get 'user/getList'
   post 'user/update'
