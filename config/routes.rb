@@ -3,13 +3,14 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'home#index'
+  root 'index#index'
+  get 'index' => 'index#index'
+  get "about_us" => 'index#asbout_us'
 
+  get 'board/index'
+  post 'board/create'
 
-   get 'board/index'
-   post 'board/create'
-
-   post 'board/reply_create'
+  post 'board/reply_create'
 
   #UserController
   post 'user/join'
