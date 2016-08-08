@@ -2,22 +2,15 @@ class IndexController < ApplicationController
 
 
   def index
-    @posts = Post.all
+
   end
 
-  def create
-    @post = Post.new(title: params[:title],po_content: params[:content])
-    @post.save
-     redirect_to :back
+  def about_us
+
   end
 
-  def edit
-  end
+  def contact_us
 
-  def new
-  end
-
-  def destroy
   end
 
 end

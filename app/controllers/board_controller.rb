@@ -40,4 +40,8 @@ class BoardController < ApplicationController
       redirect_to "/board/index"
     end
 
+    def gift_list
+
+    end
+
   end
