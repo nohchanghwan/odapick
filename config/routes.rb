@@ -4,8 +4,14 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'index#index'
-  get 'index' => 'index#index'
-  get "about_us" => 'index#asbout_us'
+
+  #IndexController
+  get "index" => 'index#index'
+  get "about_us" => 'index#about_us'
+  get "contact_us" => 'index#contact_us'
+
+  #BoardController
+  get "gift_list" => 'board#gift_list'
 
   get 'board/index'
   post 'board/create'
