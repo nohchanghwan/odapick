@@ -2982,7 +2982,7 @@ ul.half li {
 }
 
 .one-item-carousel {
-  display: block;
+  display: none;
 }
 
 .owl-carousel .owl-item img {
