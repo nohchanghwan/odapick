@@ -19,7 +19,7 @@
                             <!--end left-->
                             <div class="right">
                                 <div class="element">
-                                    <a href="#tab-sign-in" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Sign In</a>
+                                  <a href="#" data-toggle="modal" data-toggle="true" data-target="#sign-in-register-modal">Sign In</a>
                                 </div>
                                 <!--end element-->
                                 <div class="element">
@@ -34,6 +34,75 @@
                 <!--end secondary-nav-->
             </div>
             <!--end container-->
+
+
+            <!-- Modal -->
+
+
+            <div class="modal fade" id="sign-in-register-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-register-modal">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="modal-dialog width-400px" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><h1>Sign In</h1></li>
+                                    </ul>
+                                </div>
+                                <!--end modal-header-->
+                                <div class="modal-body">
+                                    <div class="tab-content">
+                                        <div id="tab-sign-in">
+                                        <form id="form-sign">
+                                            <div class="form-group">
+                                                <label for="form-sign-in-email">E-mail</label>
+                                                <input type="text" class="form-control" id="form-sign-in-email" name="sign_in_email" placeholder="Login E-mail">
+                                            </div>
+                                            <!--end form-group-->
+                                            <div class="form-group">
+                                                <label for="form-sign-in-password">Password</label>
+                                                <input type="password" class="form-control" id="form-sign-in-password" name="sign_in_password" placeholder="*****">
+                                            </div>
+                                            <!--end form-group-->
+                                            <div class="clearfix action">
+                                                <div class="form-group pull-right">
+                                                    <button type="submit" class="btn btn-primary btn-rounded">Sign In</button>
+                                                </div>
+                                                <div class="form-group pull-left">
+                                                    <label><input type="checkbox" name="1">Login Automatically</label>
+                                                </div>
+                                            </div>
+                                            <!--end action-->
+                                        </form>
+                                        <!--end form-sign-in-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end modal-body-->
+                            <div class="modal-footer">
+                                <div class="center">
+                                    <div>Lost Password? <a href="#">Reset here</a></div>
+                                    <div>New to Accommondo? <a href="#">Register an account</a></div>
+                                </div>
+                            </div>
+                            <!--end modal-footer-->
+                        </div>
+                        <!--end modal-content-->
+                    </div>
+                    <!--end modal-dialog-->
+                </div>
+            </div>
+            </div>
+
+
+
+
+            <!-- Modal End -->
+
+
+
             <hr>
             <div class="container">
                 <div class="primary-nav">
@@ -361,5 +430,11 @@
     </div>
 </div>
 <!--end modal-->
+<script type="text/javascript">
+
+$('#sign-in-register-modal').on('shown.bs.modal', function () {
+$('#myInput').focus()
+})
+</script>
 
 </body>
