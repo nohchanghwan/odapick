@@ -13,10 +13,8 @@ Rails.application.routes.draw do
   #BoardController
   get "gift_list" => 'board#gift_list'
   get "detail" => 'board#detail'
-
   get 'board/index'
   post 'board/create'
-
   post 'board/reply_create'
   get "submit" => 'board#submit'
   #UserController

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
+
 <body>
     <div class="page-wrapper">
         <div id="page-header">
@@ -112,7 +113,7 @@
             </header>
             <!--end header-->
         </div>
-        <!--end page-header-->
+<!---전반적인코드시작-------------------------------------------------------------------------->
 
         <div id="page-content">
             <div class="container">
@@ -124,7 +125,7 @@
                 <!--end breadcrumb-->
                 <div class="main-content">
                     <!--end quick-navigation-->
-                    <form class="form-submit labels-uppercase" id="form-submit" enctype="multipart/form-data">
+                    <form class="form-submit labels-uppercase" action="/board/create" method="POST" id="form-submit" enctype="multipart/form-data">
                         <section id="main-information">
                             <div class="title">
                                 <h2>선물정보</h2>
@@ -161,23 +162,26 @@
                                     <div class="form-group-inline">
                                       <label for="object-type">기념일</label>
                                       <select class="framed width-100" name="sub_anniday" id="object-type">
-                                          <option value="">Select</option>
-                                          <option value="1">Hotel</option>
-                                          <option value="2">Villa</option>
-                                          <option value="3">Resort</option>
-                                          <option value="4">Spa & Wellness</option>
+                                          <option value="연인">연인</option>
+                                          <option value="친구">친구</option>
+                                          <option value="가족">가족</option>
+                                          <option value="스승">스승</option>
+                                          <option value="생일">생일</option>
+                                          <option value="원수">원수</option>
                                       </select><br><br>
 
-                                      <label for="object-type">연령대<em>*</em></label>
+                                      <label for="object-type">연령대</label>
                                       <select class="framed width-100" name="sub_agegroup" id="object-type">
-                                          <option value="">Select</option>
-                                          <option value="1">Hotel</option>
-                                          <option value="2">Villa</option>
-                                          <option value="3">Resort</option>
-                                          <option value="4">Spa & Wellness</option>
+                                          <option value="유아">유아</option>
+                                          <option value="10대">10대</option>
+                                          <option value="20대">20대</option>
+                                          <option value="30대">30대</option>
+                                          <option value="40대">40대</option>
+                                          <option value="50대">50대</option>
+                                          <option value="60대이상">60대이상</option>
                                       </select><br><br>
 
-                                      <label for="form-submit-description">url<em>*</em></label>
+                                      <label for="form-submit-description">url</label>
                                       <textarea class="form-control" id="form-submit-description" rows="3" name="sub_url" required="" placeholder="url을 복사해주세요"></textarea>
 
                                     </div>
@@ -267,6 +271,16 @@
 
 
 
+
+<!---- 디비 저장됬는지 확인용으로 만듬. 디비에저장된 모든게시판글을 하나씩 뽑는코드------------------------------------->
+      <% @posts.each do |post| %>
+                <span style="font-weight:bold;">
+                <p><%= post.avg_point %><%= post.title %></p></span>
+                <p><%= post.url %> <%= post.anniversary%></p>
+                <p><%= post.age_group %> <%= post.gift_gender%></p>
+                <p><%= post.po_content %></p>
+      <% end %>
+
 <!--end page-wrapper--------------------------------------------------------------------------------->
       <a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
 
@@ -300,4 +314,5 @@
       </script>
 
 </body>
+
 </html>

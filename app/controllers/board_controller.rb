@@ -6,12 +6,12 @@ class BoardController < ApplicationController
     end
 
     def create #강호형스타일코딩
-      @post = Post.new(title:       params[:title],
-                       po_content:  params[:content],
-                       url:         params[:url],
+      @post = Post.new(title:       params[:sub_title],
+                       po_content:  params[:sub_content],
+                       url:         params[:sub_url],
                        anniversary: params[:sub_anniday],
-                       age_group:   params[:agegroup],
-                       gift_gender: params[:giftgender]
+                       age_group:   params[:sub_agegroup],
+                       gift_gender: params[:sub_giftgender]
                        )
       if @post.save #일반적인경우
        redirect_to :back
@@ -21,6 +21,7 @@ class BoardController < ApplicationController
     end
 
     def submit
+      @posts = Post.all
     end
 
 
