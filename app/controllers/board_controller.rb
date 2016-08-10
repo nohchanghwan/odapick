@@ -9,7 +9,7 @@ class BoardController < ApplicationController
       @post = Post.new(title:       params[:title],
                        po_content:  params[:content],
                        url:         params[:url],
-                       anniversary: params[:anniday],
+                       anniversary: params[:sub_anniday],
                        age_group:   params[:agegroup],
                        gift_gender: params[:giftgender]
                        )
@@ -18,6 +18,9 @@ class BoardController < ApplicationController
      else #만약 텍스트가없다면 에러메세지
        render :text => post.error.messages
       end
+    end
+
+    def submit
     end
 
 

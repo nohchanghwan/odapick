@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   post 'board/create'
 
   post 'board/reply_create'
-
+  get "submit" => 'board#submit'
   #UserController
   get "join_form" => 'user#join_form'
   post 'user/join'
