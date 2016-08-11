@@ -45,7 +45,7 @@ class BoardController < ApplicationController
     end
 
     def gift_list
-
+      @posts = Post.all
     end
 
   end
