@@ -39,7 +39,7 @@
             <!-- Modal -->
 
 
-            <div class="modal fade" id="sign-in-register-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-register-modal">
+            <div class="modal fade" id="sign-in-register-modal" tabindex="0" role="dialog" aria-labelledby="sign-in-register-modal" data-backdrop="false">
                 <div class="wrapper">
                     <div class="inner">
                         <div class="modal-dialog width-400px" role="document">
@@ -433,8 +433,9 @@
 <script type="text/javascript">
 
 $('#sign-in-register-modal').on('shown.bs.modal', function () {
-$('#myInput').focus()
+  keyboard: true
 })
+
 </script>
 
 </body>
