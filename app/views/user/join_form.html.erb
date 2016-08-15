@@ -18,12 +18,12 @@
                             </div>
                             <!--end left-->
                             <div class="right">
-                                <div class="element">
-                                  <a href="#" data-toggle="modal" data-toggle="true" data-target="#sign-in-register-modal">Sign In</a>
+                                <div class="element" id="div-sign-in">
+                                  <a href="#tab-sign-in" data-toggle="modal" data-toggle="true" data-target="#sign-in-register-modal" id="sign-in-btn">Sign In</a>
                                 </div>
                                 <!--end element-->
-                                <div class="element">
-                                    <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal">Register</a>
+                                <div class="element" id="div-register">
+                                    <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal" id="register-btn">Register</a>
                                 </div>
                                 <!--end element-->
                             </div>
@@ -35,11 +35,8 @@
             </div>
             <!--end container-->
 
-
-            <!-- Modal -->
-
-
-            <div class="modal fade" id="sign-in-register-modal" tabindex="0" role="dialog" aria-labelledby="sign-in-register-modal" data-backdrop="false">
+            <!--start login, join Modal-->
+            <div class="modal fade" id="sign-in-register-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-register-modal" data-backdrop="false">
                 <div class="wrapper">
                     <div class="inner">
                         <div class="modal-dialog width-400px" role="document">
@@ -48,13 +45,14 @@
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><h1>Sign In</h1></li>
+                                        <li role="presentation" class="active"><a href="#tab-sign-in" aria-controls="tab-sign-in" role="tab" data-toggle="tab"><h1>Sign In</h1></a></li>
+                                        <li role="presentation"><a href="#tab-register" aria-controls="tab-register" role="tab" data-toggle="tab"><h1>Register</h1></a></li>
                                     </ul>
                                 </div>
                                 <!--end modal-header-->
                                 <div class="modal-body">
                                     <div class="tab-content">
-                                        <div id="tab-sign-in">
+                                        <div role="tabpanel" class="tab-pane fade" id="tab-sign-in">
                                         <form id="form-sign">
                                             <div class="form-group">
                                                 <label for="form-sign-in-email">E-mail</label>
@@ -78,7 +76,42 @@
                                         </form>
                                         <!--end form-sign-in-->
                                     </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="tab-register">
+                                        <form id="form-register">
+                                            <div class="form-group">
+                                                <label for="form-register-name">Name</label>
+                                                <input type="text" class="form-control" id="form-register-name" name="register_name" placeholder="John">
+                                            </div>
+                                            <!--end form-group-->
+                                            <div class="form-group">
+                                                <label for="form-register-surname">Surname</label>
+                                                <input type="text" class="form-control" id="form-register-surname" name="register_surname" placeholder="Doe">
+                                            </div>
+                                            <!--end form-group-->
+                                            <div class="form-group">
+                                                <label for="form-register-email">E-mail</label>
+                                                <input type="text" class="form-control" id="form-register-email" name="register_email" placeholder="Login E-mail">
+                                            </div>
+                                            <!--end form-group-->
+                                            <div class="form-group">
+                                                <label for="form-register-password">Password</label>
+                                                <input type="password" class="form-control" id="form-register-password" name="register_password" placeholder="*****">
+                                            </div>
+                                            <!--end form-group-->
+                                            <div class="clearfix action">
+                                                <div class="form-group pull-right">
+                                                    <button type="submit" class="btn btn-primary btn-rounded">Sign In</button>
+                                                </div>
+                                                <div class="form-group pull-left">
+                                                    <label><input type="checkbox" name="1">Login Automatically</label>
+                                                </div>
+                                            </div>
+                                            <!--end action-->
+                                        </form>
+                                        <!--end form-sign-in-->
+                                    </div>
                                 </div>
+
                             </div>
                             <!--end modal-body-->
                             <div class="modal-footer">
@@ -94,12 +127,8 @@
                     <!--end modal-dialog-->
                 </div>
             </div>
-            </div>
-
-
-
-
-            <!-- Modal End -->
+        </div>
+            <!--end login, join Modal-->
 
 
 
@@ -333,109 +362,17 @@
 <!--end page-wrapper-->
 <a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
 
-
-<!-- Modal -->
-<div class="modal fade" id="package-modal" tabindex="-1" role="dialog" aria-labelledby="package-modal">
-    <div class="wrapper">
-        <div class="inner">
-            <div class="modal-dialog width-800px" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <!-- Nav tabs -->
-                        <h1>Choose a Package</h1>
-                    </div>
-                    <!--end modal-header-->
-                    <div class="modal-body">
-                        <div class="table-responsive pricing-table">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th class="width-50 opacity-50">
-                                        <span class="title">Service</span>
-                                    </th>
-                                    <th class="section">
-                                        <span class="title">Basic</span>
-                                        <span class="price">$19.90</span>
-                                        <span class="appendix">/year</span>
-                                    </th>
-                                    <th class="section">
-                                        <span class="title">Medium
-                                            <span class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top"><i class="fa fa-thumbs-up"></i></span>
-                                        </span>
-                                        <span class="price">$39.90</span>
-                                        <span class="appendix">/year</span>
-                                    </th>
-                                    <th class="section">
-                                        <span class="title">Professional</span>
-                                        <span class="price">$69.90</span>
-                                        <span class="appendix">/year</span>
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Number of accommodations<i class="fa fa-question-circle tooltip-question" data-toggle="tooltip" data-placement="right" title="Nam quis ipsum ac sem ornare efficitur et vel mauris. Proin nibh arcu, vulputate eget massa sed."></i></td>
-                                    <td>1</td>
-                                    <td>10</td>
-                                    <td>Unlimited</td>
-                                </tr>
-                                <tr>
-                                    <td>Number of photos in gallery<i class="fa fa-question-circle tooltip-question" data-toggle="tooltip" data-placement="right" title="Nam quis ipsum ac sem ornare efficitur et vel mauris. Proin nibh arcu, vulputate eget massa sed."></i></td>
-                                    <td>5</td>
-                                    <td>10</td>
-                                    <td>Unlimited</td>
-                                </tr>
-                                <tr>
-                                    <td>Availability change<i class="fa fa-question-circle tooltip-question" data-toggle="tooltip" data-placement="right" title="Nam quis ipsum ac sem ornare efficitur et vel mauris. Proin nibh arcu, vulputate eget massa sed."></i></td>
-                                    <td class="not-available"><i class="fa fa-times"></i></td>
-                                    <td class="available"><i class="fa fa-check"></i></td>
-                                    <td class="available"><i class="fa fa-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Statistics<i class="fa fa-question-circle tooltip-question" data-toggle="tooltip" data-placement="right" title="Nam quis ipsum ac sem ornare efficitur et vel mauris. Proin nibh arcu, vulputate eget massa sed."></i></td>
-                                    <td class="not-available"><i class="fa fa-times"></i></td>
-                                    <td class="available"><i class="fa fa-check"></i></td>
-                                    <td class="available"><i class="fa fa-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Featured Accommodation<i class="fa fa-question-circle tooltip-question" data-toggle="tooltip" data-placement="right" title="Nam quis ipsum ac sem ornare efficitur et vel mauris. Proin nibh arcu, vulputate eget massa sed."></i></td>
-                                    <td class="not-available"><i class="fa fa-times"></i></td>
-                                    <td class="not-available"><i class="fa fa-times"></i></td>
-                                    <td class="available"><i class="fa fa-check"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>Always on the home page<i class="fa fa-question-circle tooltip-question" data-toggle="tooltip" data-placement="right" title="Nam quis ipsum ac sem ornare efficitur et vel mauris. Proin nibh arcu, vulputate eget massa sed."></i></td>
-                                    <td class="not-available"><i class="fa fa-times"></i></td>
-                                    <td class="not-available"><i class="fa fa-times"></i></td>
-                                    <td class="available"><i class="fa fa-check"></i></td>
-                                </tr>
-                                <tr class="buttons">
-                                    <td class="opacity-30"><strong>Tip:</strong> You can change your package any time</td>
-                                    <td><button type="button" class="btn btn-primary btn-rounded">Register</button></td>
-                                    <td><button type="button" class="btn btn-primary btn-rounded">Register</button></td>
-                                    <td><button type="button" class="btn btn-primary btn-rounded">Register</button></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!--end pricing-table-->
-                    </div>
-                    <!--end modal-body-->
-                </div>
-                <!--end modal-content-->
-            </div>
-            <!--end modal-dialog-->
-        </div>
-    </div>
-</div>
-<!--end modal-->
 <script type="text/javascript">
+var signIn = document.getElementById('div-sign-in');
+var register = document.getElementById('div-register');
 
-$('#sign-in-register-modal').on('shown.bs.modal', function () {
-  keyboard: true
-})
+signIn.onclick = function(){
+  document.getElementById("tab-sign-in").setAttribute("class","active in");
+};
 
+register.onclick = function(){
+  document.getElementById("tab-register").setAttribute("class","active in");
+};
 </script>
 
 </body>
