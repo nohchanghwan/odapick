@@ -2491,6 +2491,11 @@ ul.half li {
   margin-top: 5px;
   margin-bottom: 20px;
 }
+.main-content h5 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  line-height: 170%;
+}
 .main-content section {
   margin-bottom: 50px;
 }
