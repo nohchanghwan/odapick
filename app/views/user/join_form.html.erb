@@ -45,8 +45,8 @@
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs" role="tablist">
-                                        <li role="presentation" class="active"><a href="#tab-sign-in" aria-controls="tab-sign-in" role="tab" data-toggle="tab"><h1>Sign In</h1></a></li>
-                                        <li role="presentation"><a href="#tab-register" aria-controls="tab-register" role="tab" data-toggle="tab"><h1>Register</h1></a></li>
+                                        <li role="presentation" class="" id="li-sign-in"><a href="#tab-sign-in" aria-controls="tab-sign-in" role="tab" data-toggle="tab"><h1>Sign In</h1></a></li>
+                                        <li role="presentation" class="" id="li-register"><a href="#tab-register" aria-controls="tab-register" role="tab" data-toggle="tab"><h1>Register</h1></a></li>
                                     </ul>
                                 </div>
                                 <!--end modal-header-->
@@ -84,11 +84,6 @@
                                             </div>
                                             <!--end form-group-->
                                             <div class="form-group">
-                                                <label for="form-register-surname">Surname</label>
-                                                <input type="text" class="form-control" id="form-register-surname" name="register_surname" placeholder="Doe">
-                                            </div>
-                                            <!--end form-group-->
-                                            <div class="form-group">
                                                 <label for="form-register-email">E-mail</label>
                                                 <input type="text" class="form-control" id="form-register-email" name="register_email" placeholder="Login E-mail">
                                             </div>
@@ -98,6 +93,35 @@
                                                 <input type="password" class="form-control" id="form-register-password" name="register_password" placeholder="*****">
                                             </div>
                                             <!--end form-group-->
+                                            <div class="form-group">
+                                                <label for="form-register-password">Birth</label>
+                                                <input type="date" class="form-control" id="form-register-birth" name="register_password" placeholder="*****">
+                                            </div>
+                                            <!--end form-group-->
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form-register-password">Gender</label>
+                                                    <select class="framed width-100" name="form-register-gender" name="register_gender">
+                                                        <option value="m">남자</option>
+                                                        <option value="f">여자</option>
+                                                    </select>
+                                                </div>
+                                                <!--end form-group-->
+                                              </div>
+                                              <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form-register-password">Job</label>
+                                                    <select class="framed width-100" name="form-register-job" name="register_job">
+                                                        <option value="1">학생</option>
+                                                        <option value="2">연구원</option>
+                                                        <option value="3">자영업자</option>
+                                                        <option value="4">기타</option>
+                                                    </select>
+                                                </div>
+                                                <!--end form-group-->
+                                              </div>
+                                            </div>
                                             <div class="clearfix action">
                                                 <div class="form-group pull-right">
                                                     <button type="submit" class="btn btn-primary btn-rounded">Sign In</button>
@@ -117,7 +141,6 @@
                             <div class="modal-footer">
                                 <div class="center">
                                     <div>Lost Password? <a href="#">Reset here</a></div>
-                                    <div>New to Accommondo? <a href="#">Register an account</a></div>
                                 </div>
                             </div>
                             <!--end modal-footer-->
@@ -367,12 +390,16 @@ var signIn = document.getElementById('div-sign-in');
 var register = document.getElementById('div-register');
 
 signIn.onclick = function(){
+  document.getElementById('li-sign-in').setAttribute('class', "active");
+  document.getElementById('li-register').removeAttribute('class');
   document.getElementById('tab-register').removeAttribute('class');
   document.getElementById('tab-register').setAttribute("class", "tab-pane fade");
   document.getElementById("tab-sign-in").setAttribute("class","tab-pane fade active in");
 };
 
 register.onclick = function(){
+  document.getElementById('li-register').setAttribute('class', "active");
+  document.getElementById('li-sign-in').removeAttribute('class');
   document.getElementById('tab-sign-in').removeAttribute('class');
   document.getElementById('tab-sign-in').setAttribute("class", "tab-pane fade");
   document.getElementById("tab-register").setAttribute("class","tab-pane fade active in");

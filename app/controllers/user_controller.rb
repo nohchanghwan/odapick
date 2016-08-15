@@ -1,11 +1,13 @@
 class UserController < ApplicationController
 
-  def join_form
-
-  end
-
   def join
-
+    @users = User.new(email_id:  params[:sub_emailId],
+                      password:  params[:sub_password],
+                      name:      params[:sub_name],
+                      gender:    params[:sub_gender],
+                      birth:     params[:sub_birth],
+                      job:       params[:sub_job]
+                      )
   end
 
   #유저 전체의 정보 가져오는 메소드
