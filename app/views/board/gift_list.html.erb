@@ -212,74 +212,6 @@
                             </div>
                             <!--col-md-3-->
                             <div class="col-md-4 col-sm-6">
-                                <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="2">
-                                    <div class="item-wrapper">
-                                        <div class="image">
-                                            <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
-                                            <a href="/detail" class="wrapper" width="345" height="250" align="middle">
-                                                <img src="assets/img/items/sample2.jpg" alt="">
-                                            </a>
-                                            <div class="owl-navigation"></div>
-                                            <!--end owl-navigation-->
-                                        </div>
-                                        <!--end image-->
-                                        <div class="description">
-                                            <div class="meta">
-                                                <span><i class="fa fa-star"></i>9.3</span>
-                                                <span>Review 8</span>
-                                            </div>
-                                            <div class="info">
-                                                <figure class="label label-info">향수</figure>
-                                                <a href="/detail"><h3>JIMMY CHOO</h3></a>
-                                                <figure class="location">BLOSSOM perfume</figure>
-                                            </div>
-                                        </div>
-                                        <!--end description-->
-                                        <div class="map-item">
-                                            <button class="btn btn-close"><i class="fa fa-close"></i></button>
-                                            <div class="map-wrapper"></div>
-                                        </div>
-                                        <!--end map-item-->
-                                    </div>
-                                </div>
-                                <!--end item-->
-                            </div>
-                            <!--col-md-3-->
-                            <div class="col-md-4 col-sm-6">
-                                <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="3">
-                                    <div class="item-wrapper">
-                                        <div class="image">
-                                            <div class="mark-circle top" data-toggle="tooltip" data-placement="right" title="Top accommodation"><i class="fa fa-thumbs-up"></i></div>
-                                            <a href="/detail" class="wrapper" width="345" height="250" align="middle">
-                                                <img src="assets/img/items/sample3.jpg" alt="">
-                                            </a>
-                                            <div class="owl-navigation"></div>
-                                            <!--end owl-navigation-->
-                                        </div>
-                                        <!--end image-->
-                                        <div class="description">
-                                            <div class="meta">
-                                                <span><i class="fa fa-star"></i>9.8</span>
-                                                <span>Review 35</span>
-                                            </div>
-                                            <div class="info">
-                                                <figure class="label label-info">게임</figure>
-                                                <a href="/detail"><h3>BLIZZARD</h3></a>
-                                                <figure class="location">OVERWATCH</figure>
-                                            </div>
-                                        </div>
-                                        <!--end description-->
-                                        <div class="map-item">
-                                            <button class="btn btn-close"><i class="fa fa-close"></i></button>
-                                            <div class="map-wrapper"></div>
-                                        </div>
-                                        <!--end map-item-->
-                                    </div>
-                                </div>
-                                <!--end item-->
-                            </div>
-                            <!--col-md-3-->
-                            <div class="col-md-4 col-sm-6">
                                 <div class="item big equal-height" data-map-latitude="48.87" data-map-longitude="2.29" data-id="4">
                                     <div class="item-wrapper">
                                         <div class="image">
@@ -381,7 +313,7 @@
                                 </div>
                                 <!--end item-->
                             </div>
-                            <!------------------------------------------------>
+<!---디비에서 받은 데이터를 직접 리스트에 띄우는 코드------------------------------------->
                             <% @posts.each do |post| %>
 
 
@@ -419,7 +351,8 @@
                                 <!--end item-->
                             </div>
                             <% end %>
-                           <!------------------------------------------------>
+
+<!--------------------------------------------------------------------------->
                             <!--col-md-3-->
                             <!--col-md-3-->
                             <!--col-md-3-->
@@ -490,7 +423,7 @@
 <!--end page-wrapper-->
 <a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
 
-<!----------------------------------------------------------------------------->
+<!---디비확인용-------------------------------------------------------------------------->
 <% @posts.each do |post| %>
           <span style="font-weight:bold;">
           <p><%= post.avg_point %><%= post.title %></p></span>

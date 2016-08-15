@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20160722084436) do
     t.string   "age_group"
     t.string   "gift_gender"
     t.datetime "posted_at"
+    t.string   "money"
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end

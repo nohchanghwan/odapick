@@ -11,7 +11,8 @@ class BoardController < ApplicationController
                        url:         params[:sub_url],
                        anniversary: params[:sub_anniday],
                        age_group:   params[:sub_agegroup],
-                       gift_gender: params[:sub_giftgender]
+                       gift_gender: params[:sub_giftgender],
+                       money:       params[:sub_money]
                        )
       if @post.save #일반적인경우
        redirect_to :back
@@ -37,8 +38,8 @@ class BoardController < ApplicationController
     def reply_create #두희대장스타일코딩
       @replies = Reply.all.order("id desc")
       reply = Reply.new
-      reply.re_content = params[:content_of_re] #뒤에콘텐츠는 index 에서의 name값이다.
-      reply.post_id = params[:post_of_re]
+      reply.re_content =    params[:content_of_re] #뒤에콘텐츠는 index 에서의 name값이다.
+      reply.post_id =       params[:post_of_re]
       reply.present_point = params[:point]
       reply.save
       redirect_to "/board/index"
