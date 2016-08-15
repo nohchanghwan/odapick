@@ -52,7 +52,7 @@
                                 <!--end modal-header-->
                                 <div class="modal-body">
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane fade" id="tab-sign-in">
+                                        <div role="tabpanel" class="" id="tab-sign-in">
                                         <form id="form-sign">
                                             <div class="form-group">
                                                 <label for="form-sign-in-email">E-mail</label>
@@ -76,7 +76,7 @@
                                         </form>
                                         <!--end form-sign-in-->
                                     </div>
-                                    <div role="tabpanel" class="tab-pane fade" id="tab-register">
+                                    <div role="tabpanel" class="" id="tab-register">
                                         <form id="form-register">
                                             <div class="form-group">
                                                 <label for="form-register-name">Name</label>
@@ -367,11 +367,15 @@ var signIn = document.getElementById('div-sign-in');
 var register = document.getElementById('div-register');
 
 signIn.onclick = function(){
-  document.getElementById("tab-sign-in").setAttribute("class","active in");
+  document.getElementById('tab-register').removeAttribute('class');
+  document.getElementById('tab-register').setAttribute("class", "tab-pane fade");
+  document.getElementById("tab-sign-in").setAttribute("class","tab-pane fade active in");
 };
 
 register.onclick = function(){
-  document.getElementById("tab-register").setAttribute("class","active in");
+  document.getElementById('tab-sign-in').removeAttribute('class');
+  document.getElementById('tab-sign-in').setAttribute("class", "tab-pane fade");
+  document.getElementById("tab-register").setAttribute("class","tab-pane fade active in");
 };
 </script>
 
