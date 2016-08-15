@@ -1,0 +1,239 @@
+<div id="page-header">
+    <header>
+        <div class="container">
+            <div class="secondary-nav">
+                <div class="nav-trigger"><a data-toggle="collapse" href="#secondary-nav" aria-expanded="false" aria-controls="secondary-nav"><i class="fa fa-user"></i></a></div>
+                <div id="secondary-nav">
+                    <nav>
+                        <div class="left opacity-60">
+                            <a href="mailto:hello@example.com"><i class="fa fa-envelope"></i>hello@example.com</a>
+                        </div>
+                        <!--end left-->
+                        <div class="right">
+                            <div class="element" id="div-sign-in">
+                              <a href="#tab-sign-in" data-toggle="modal" data-toggle="true" data-target="#sign-in-register-modal" id="sign-in-btn">Sign In</a>
+                            </div>
+                            <!--end element-->
+                            <div class="element" id="div-register">
+                                <a href="#tab-register" data-toggle="modal" data-tab="true" data-target="#sign-in-register-modal" id="register-btn">Register</a>
+                            </div>
+                            <!--end element-->
+                        </div>
+                        <!--end right-->
+                    </nav>
+                </div>
+            </div>
+            <!--end secondary-nav-->
+        </div>
+        <!--end container-->
+
+        <!--start login, join Modal-->
+        <div class="modal fade" id="sign-in-register-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-register-modal" data-backdrop="false">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="modal-dialog width-400px" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="" id="li-sign-in"><a href="#tab-sign-in" aria-controls="tab-sign-in" role="tab" data-toggle="tab"><h1>Sign In</h1></a></li>
+                                    <li role="presentation" class="" id="li-register"><a href="#tab-register" aria-controls="tab-register" role="tab" data-toggle="tab"><h1>Register</h1></a></li>
+                                </ul>
+                            </div>
+                            <!--end modal-header-->
+                            <div class="modal-body">
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="" id="tab-sign-in">
+                                    <form id="form-sign">
+                                        <div class="form-group">
+                                            <label for="form-sign-in-email">E-mail</label>
+                                            <input type="text" class="form-control" id="form-sign-in-email" name="sign_in_email" placeholder="Login E-mail">
+                                        </div>
+                                        <!--end form-group-->
+                                        <div class="form-group">
+                                            <label for="form-sign-in-password">Password</label>
+                                            <input type="password" class="form-control" id="form-sign-in-password" name="sign_in_password" placeholder="*****">
+                                        </div>
+                                        <!--end form-group-->
+                                        <div class="clearfix action">
+                                            <div class="form-group pull-right">
+                                                <button type="submit" class="btn btn-primary btn-rounded">Sign In</button>
+                                            </div>
+                                            <div class="form-group pull-left">
+                                                <label><input type="checkbox" name="1">Login Automatically</label>
+                                            </div>
+                                        </div>
+                                        <!--end action-->
+                                    </form>
+                                    <!--end form-sign-in-->
+                                </div>
+                                <div role="tabpanel" class="" id="tab-register">
+                                    <form id="form-register">
+                                        <div class="form-group">
+                                            <label for="form-register-name">Name</label>
+                                            <input type="text" class="form-control" id="form-register-name" name="register_name" placeholder="John">
+                                        </div>
+                                        <!--end form-group-->
+                                        <div class="form-group">
+                                            <label for="form-register-email">E-mail</label>
+                                            <input type="text" class="form-control" id="form-register-email" name="register_email" placeholder="Login E-mail">
+                                        </div>
+                                        <!--end form-group-->
+                                        <div class="form-group">
+                                            <label for="form-register-password">Password</label>
+                                            <input type="password" class="form-control" id="form-register-password" name="register_password" placeholder="*****">
+                                        </div>
+                                        <!--end form-group-->
+                                        <div class="form-group">
+                                            <label for="form-register-password">Birth</label>
+                                            <input type="date" class="form-control" id="form-register-birth" name="register_password" placeholder="*****">
+                                        </div>
+                                        <!--end form-group-->
+                                        <div class="row">
+                                          <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form-register-password">Gender</label>
+                                                <select class="framed width-100" name="form-register-gender" name="register_gender">
+                                                    <option value="m">남자</option>
+                                                    <option value="f">여자</option>
+                                                </select>
+                                            </div>
+                                            <!--end form-group-->
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form-register-password">Job</label>
+                                                <select class="framed width-100" name="form-register-job" name="register_job">
+                                                    <option value="1">학생</option>
+                                                    <option value="2">연구원</option>
+                                                    <option value="3">자영업자</option>
+                                                    <option value="4">기타</option>
+                                                </select>
+                                            </div>
+                                            <!--end form-group-->
+                                          </div>
+                                        </div>
+                                        <div class="clearfix action">
+                                            <div class="form-group pull-right">
+                                                <button type="submit" class="btn btn-primary btn-rounded">Sign In</button>
+                                            </div>
+                                            <div class="form-group pull-left">
+                                                <label><input type="checkbox" name="1">Login Automatically</label>
+                                            </div>
+                                        </div>
+                                        <!--end action-->
+                                    </form>
+                                    <!--end form-sign-in-->
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--end modal-body-->
+                        <div class="modal-footer">
+                            <div class="center">
+                                <div>Lost Password? <a href="#">Reset here</a></div>
+                            </div>
+                        </div>
+                        <!--end modal-footer-->
+                    </div>
+                    <!--end modal-content-->
+                </div>
+                <!--end modal-dialog-->
+            </div>
+        </div>
+        </div>
+        <!--end login, join Modal-->
+
+        <hr>
+        <div class="container">
+            <div class="primary-nav">
+                <div class="left">
+                    <a href="/index" id="brand"><img src="assets/img/logo.png" alt=""></a>
+                    <a class="nav-trigger" data-toggle="collapse" href="#primary-nav" aria-expanded="false" aria-controls="primary-nav"><i class="fa fa-navicon"></i></a>
+                </div>
+                <!--end left-->
+                <div class="right" >
+                    <nav id="primary-nav">
+                        <ul>
+                            <li><a href="/index">Home</a></li>
+                            <li><a href="/about_us">About Us</a></li>
+                            <!-- list backup
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li>
+                                <a href="#" class="has-child">Listing</a>
+                                <ul class="child-nav">
+                                    <li><a href="listing.html">List Listing</a></li>
+                                    <li><a href="listing-matrix.html">Matrix Listing</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="has-child">Pages</a>
+                                <ul class="child-nav">
+                                    <li><a href="404.html">404</a></li>
+                                    <li>
+                                        <a href="#" class="has-child">Admin</a>
+                                        <ul class="child-nav">
+                                            <li><a href="edit.html">Edit Accommodation</a></li>
+                                            <li><a href="my-accommodations.html">My Accommodations</a></li>
+                                            <li><a href="profile.html">Profile</a></li>
+                                            <li><a href="reservations.html">Reservations</a></li>
+                                            <li><a href="reviews.html">Reviews</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="detail.html">Accommodation Detail</a></li>
+                                    <li><a href="become-an-affiliate.html">Become an Affiliate</a></li>
+                                    <li>
+                                        <a href="#" class="has-child">Blog</a>
+                                        <ul class="child-nav">
+                                            <li><a href="blog.html">Blog Listing</a></li>
+                                            <li><a href="blog-detail.html">Blog Detail</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="grid.html">Grid</a></li>
+                                    <li><a href="sticky-footer.html">Sticky Footer</a></li>
+                                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                            <li class="submit"><a href="submit.html"><span>Submit</span><i data-toggle="tooltip" data-placement="top" title="Submit"><img src="assets/img/plus.png" alt=""></i></a></li>
+                            -->
+                            <li><a href="/gift_list">주우러가기</a></li>
+                            <li><a href="/contact-us">질문하기</a></li>
+                        </ul>
+                    </nav>
+                    <!--end nav-->
+                </div>
+                <!--end right-->
+            </div>
+            <!--end primary-nav-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+</div>
+<!--end page-header-->
+
+<script type="text/javascript">
+var signIn = document.getElementById('div-sign-in');
+var register = document.getElementById('div-register');
+
+signIn.onclick = function(){
+  document.getElementById('li-sign-in').setAttribute('class', "active");
+  document.getElementById('li-register').removeAttribute('class');
+  document.getElementById('tab-register').removeAttribute('class');
+  document.getElementById('tab-register').setAttribute("class", "tab-pane fade");
+  document.getElementById("tab-sign-in").setAttribute("class","tab-pane fade active in");
+};
+
+register.onclick = function(){
+  document.getElementById('li-register').setAttribute('class', "active");
+  document.getElementById('li-sign-in').removeAttribute('class');
+  document.getElementById('tab-sign-in').removeAttribute('class');
+  document.getElementById('tab-sign-in').setAttribute("class", "tab-pane fade");
+  document.getElementById("tab-register").setAttribute("class","tab-pane fade active in");
+};
+</script>
