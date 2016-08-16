@@ -1,13 +1,21 @@
 class UserController < ApplicationController
 
+  def index
+    @users = User.all
+  end
+
   def join
-    @users = User.new(email_id:  params[:sub_emailId],
-                      password:  params[:sub_password],
-                      name:      params[:sub_name],
-                      gender:    params[:sub_gender],
-                      birth:     params[:sub_birth],
-                      job:       params[:sub_job]
+    user = User.new(email_id:  params[:register_emailId],
+                      password:  params[:register_password],
+                      name:      params[:register_name],
+                      gender:    params[:register_gender],
+                      birth:     params[:register_birth],
+                      job:       params[:register_job]
                       )
+    if user.save
+      redirect_to: back
+    else
+      render :id => user.error.messages
   end
 
   #유저 전체의 정보 가져오는 메소드
