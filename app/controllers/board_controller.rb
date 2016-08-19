@@ -24,7 +24,9 @@ class BoardController < ApplicationController
     def submit
       @posts = Post.all
     end
-
+    def master1
+     @posts = Post.all
+    end
 
     def edit
     end
