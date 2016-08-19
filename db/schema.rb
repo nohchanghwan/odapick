@@ -14,16 +14,36 @@
 ActiveRecord::Schema.define(version: 20160816071428) do
 
   create_table "posts", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title"
+    t.text     "po_content"
+    t.string   "url"
+    t.string   "image",       default: ""
+    t.integer  "avg_point"
+    t.string   "anniversary"
+    t.string   "age_group"
+    t.string   "gift_gender"
+    t.datetime "posted_at"
+    t.string   "money"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "replies", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "present_point"
+    t.text     "re_content"
+    t.integer  "post_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "users", force: :cascade do |t|
+    t.string   "email_id"
+    t.string   "password"
+    t.string   "name"
+    t.string   "gender"
+    t.datetime "birth"
+    t.string   "job"
+    t.datetime "joined_at"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.string   "email",                  default: "", null: false
