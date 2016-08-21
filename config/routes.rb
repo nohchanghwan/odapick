@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get 'board/index'
   post 'board/create'
   post 'board/reply_create'
+  get "editted" => 'board#editted'
   get "submit" => 'board#submit'
   get "master" => 'board#master'
   get "master1" => 'board#master1'

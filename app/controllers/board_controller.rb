@@ -1,11 +1,9 @@
 class BoardController < ApplicationController
 
 
-    def index
-      @posts = Post.all
-    end
 
-    def create #강호형스타일코딩
+
+    def create #[C]RUD---------------------------------------------------------
       @post = Post.new(title:       params[:sub_title],
                        po_content:  params[:sub_content],
                        url:         params[:sub_url],
@@ -21,21 +19,43 @@ class BoardController < ApplicationController
       end
     end
 
+
+
+    def index # C[R]UD---------------------------------------------------------
+      @posts = Post.all
+    end
+
     def submit
       @posts = Post.all
     end
     def master1
      @posts = Post.all
+   end
+
+
+
+    def editted # CR[U]D----------------------------------------------------------
+      @post = Post.new
     end
 
-    def edit
+    def updated_at
+      @post = Post.find(params[:id])
+      @post.po_content = "hello" # 수정할내용이들어가야한다.
+      @post.save
+      redirect_to :root
     end
 
-    def new
+
+
+    def destroy # CRU[D]-------------------------------------------------------
     end
 
-    def destroy
-    end
+
+
+
+
+###############################################################################
+
 
     def reply_create #두희대장스타일코딩
       @replies = Reply.all.order("id desc")
@@ -46,6 +66,7 @@ class BoardController < ApplicationController
       reply.save
       redirect_to "/board/index"
     end
+
 
     def gift_list
       @posts = Post.all
