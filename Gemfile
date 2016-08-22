@@ -4,8 +4,15 @@ gem 'fog-aws'
 # 나중에 아마존에 올리게될경우 (s3) 필요한 잼이라서 미리설치해둠 주로 파일 업로드에사용
 gem 'carrierwave'
 # 이미지파일 올리기위해 사용하는잼
-gem 'devise'
-# 로그인에 사용하는 젬
+
+gem 'devise' # 회원가입 및 인증
+gem 'rolify' # role 관리
+gem 'authority' # 권한 설정
+# 로그인에 사용하는 젬 - 회원 인증 및 권한설정에 필요한 젬
+
+gem 'bootstrap-sass'
+gem 'simple_form'
+# 뷰를 깔끔하게 보여주기위한 젬
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'

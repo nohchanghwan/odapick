@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //터보링크삭제
 //= require_tree .
+
+// Loads all Bootstrap javascripts
+//= require bootstrap
