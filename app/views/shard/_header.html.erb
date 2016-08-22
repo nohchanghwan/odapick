@@ -10,14 +10,26 @@
                         </div>
                         <!--end left-->
                         <div class="right">
+
+                          <% if user_signed_in? %>
+                            <div class="element" id="div-email-id">
+                              <a href="#" id="email_id"><%= current_user.email %></a>
+                            </div>
+                            <!--end element-->
+                            <div class="element" id="div-logout">
+                                <%= link_to "로그아웃", destroy_user_session_path, method: :delete, data: { confirm: "Are you sure?" } %>
+                            </div>
+                            <!--end element-->
+                          <% else %>
                             <div class="element" id="div-sign-in">
-                              <a href="/users/sign_in" id="sign_in">Sign In</a>
+                              <%= link_to "로그인", new_user_session_path %>
                             </div>
                             <!--end element-->
                             <div class="element" id="div-register">
-                                <a href="/users/sign_up" id="register">Register</a>
+                                <%= link_to "회원가입", new_user_registration_path %>
                             </div>
                             <!--end element-->
+                          <% end %>
                         </div>
                         <!--end right-->
                     </nav>
