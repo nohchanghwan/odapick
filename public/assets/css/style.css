@@ -3289,6 +3289,31 @@ ul.half li {
   margin-bottom: 30px;
   position: relative;
 }
+.review .title {
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+.review-rating {
+  color: #fc6472;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.review-count {
+  color: #fc6472;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+.review .row .rating {
+  color: #fc6472;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  display: inline-block;
+}
 .review.switch {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
