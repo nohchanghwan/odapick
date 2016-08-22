@@ -10,6 +10,7 @@ class CreatePosts < ActiveRecord::Migration
         t.string :age_group
         t.string :gift_gender
         t.datetime :posted_at
+        t.string :money
       t.timestamps null: false
     end
   end

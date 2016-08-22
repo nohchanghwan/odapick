@@ -337,7 +337,7 @@ a.link {
   text-transform: uppercase;
 }
 a.link:hover, a.link:active, a.link:focus {
-  color: #3f7d36;
+  color: #E65C67;
 }
 a.link:hover.icon i, a.link:active.icon i, a.link:focus.icon i {
   color: #1f1f1f;
@@ -1054,6 +1054,7 @@ ul.half li {
   margin-bottom: 10px;
   font-size: 12px;
   margin-top: 5px;
+  text-align: right;
 }
 
 .calendar {
@@ -3952,7 +3953,7 @@ ul.half li {
 }
 .to-top:hover, .to-top:active, .to-top:focus {
   color: #fff;
-  background-color: #3f7d36;
+  background-color: #E65C67;
 }
 
 .quick-navigation {
@@ -4486,7 +4487,7 @@ button:hover, button:active, button:focus {
   color: #fff;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  background-color: #3f7d36;
+  background-color: #E65C67;
 }
 .btn.btn-large {
   padding: 10px 20px 11px 20px;
@@ -5317,4 +5318,23 @@ body::before {
 .checkbox-inline:last-child,
 .radio-inline:last-child {
     margin-right: 0;
+}
+
+/*--------load more test code ---------*/
+
+.button-spoiler-div {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+  top: -2px;
+  background: #ffffff;
+}
+
+}
+.button-spoiler-div a {
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  font-size: 14px;
 }

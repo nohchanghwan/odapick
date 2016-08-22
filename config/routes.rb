@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -16,7 +17,14 @@ Rails.application.routes.draw do
   get 'board/index'
   post 'board/create'
   post 'board/reply_create'
+  get "editted" => 'board#editted'
   get "submit" => 'board#submit'
+  get "master" => 'board#master'
+  get "master1" => 'board#master1'
+  get "master2" => 'board#master2'
+  get "master3" => 'board#master3'
+  get "master4" => 'board#master4'
+
   #UserController
   get "join_form" => 'user#join_form'
   post 'user/join'
