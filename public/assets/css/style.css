@@ -5319,22 +5319,3 @@ body::before {
 .radio-inline:last-child {
     margin-right: 0;
 }
-
-/*--------load more test code ---------*/
-
-.button-spoiler-div {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #e2e2e2;
-  position: relative;
-  top: -2px;
-  background: #ffffff;
-}
-
-}
-.button-spoiler-div a {
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px dashed;
-  font-size: 14px;
-}
