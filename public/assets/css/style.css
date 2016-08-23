@@ -3289,6 +3289,31 @@ ul.half li {
   margin-bottom: 30px;
   position: relative;
 }
+.review .title {
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+.review-rating {
+  color: #fc6472;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.review-count {
+  color: #fc6472;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+.review .row .rating {
+  color: #fc6472;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  display: inline-block;
+}
 .review.switch {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
@@ -5318,23 +5343,4 @@ body::before {
 .checkbox-inline:last-child,
 .radio-inline:last-child {
     margin-right: 0;
-}
-
-/*--------load more test code ---------*/
-
-.button-spoiler-div {
-  text-align: center;
-  padding: 10px;
-  border: 1px solid #e2e2e2;
-  position: relative;
-  top: -2px;
-  background: #ffffff;
-}
-
-}
-.button-spoiler-div a {
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 1px dashed;
-  font-size: 14px;
 }

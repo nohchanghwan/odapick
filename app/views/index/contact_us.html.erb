@@ -3,87 +3,86 @@
 <html lang="en-US">
 <body>
 <div class="page-wrapper">
-    <%=render "shard/header"%>
+  <%= render "shard/header" %>
 
-    <div id="page-content">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3" style="padding-top: 10px;">
-                  <h2>Contact Us</h2>
-                  <address>
-                      <strong>Incheon Univ.</strong><br>
-                      멋쟁이사자처럼 4기<br>
-                      노창환, 여정수, 윤소연, 전상영<br>
-                      <br>
-                      <a href="#">hello@naver.com</a><br>
-                      <strong>kakaotalk:</strong> odaju
-                  </address>
-                  <h3>오다주웠다의 SNS</h3>
-                  <div class="social-icons">
-                      <a href="#"><i class="fa fa-facebook"></i></a>
-                      <a href="#"><i class="fa fa-twitter"></i></a>
-                      <a href="#"><i class="fa fa-instagram"></i></a>
-                  </div>
+  <div id="page-content">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-3" style="padding-top: 10px;">
+                <h2>Contact Us</h2>
+                <address>
+                    <strong>Incheon Univ.</strong><br>
+                    멋쟁이사자처럼 4기<br>
+                    노창환, 여정수, 윤소연, 전상영<br>
+                    <br>
+                    <a href="#">hello@naver.com</a><br>
+                    <strong>kakaotalk:</strong> odaju
+                </address>
+                <h3>오다주웠다의 SNS</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
                 </div>
-                <!--end col-md-3-->
-                <div class="col-md-9">
-                  <form class="labels-uppercase clearfix">
-                      <h2>1:1 문의하기</h2>
-                      <div class="form-group">
-                          <label for="form-contact-section">구분<em>*</em></label>
-                          <select class="framed width-40" name="faq_section" id="faq_section">
-                              <option value="1">ㅇㅇ관련 문의</option>
-                              <option value="2">ㅁㅁ관련 문의</option>
-                              <option value="3">ㅍㅍ관련 문의</option>
-                              <option value="4">기타문의</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="form-contact-title">제목<em>*</em></label>
-                          <input type="text" class="form-control" id="form-contact-name" name="location" placeholder="제목" required="">
-                      </div>
+              </div>
+              <!--end col-md-3-->
+              <div class="col-md-9">
+                <form class="labels-uppercase clearfix">
+                    <h2>1:1 문의하기</h2>
+                    <div class="form-group">
+                        <label for="form-contact-section">구분<em>*</em></label>
+                        <select class="framed width-40" name="faq_section" id="faq_section">
+                            <option value="1">ㅇㅇ관련 문의</option>
+                            <option value="2">ㅁㅁ관련 문의</option>
+                            <option value="3">ㅍㅍ관련 문의</option>
+                            <option value="4">기타문의</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-contact-title">제목<em>*</em></label>
+                        <input type="text" class="form-control" id="form-contact-name" name="location" placeholder="제목" required="">
+                    </div>
 
-                      <div class="row">
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="form-contact-name">이름<em>*</em></label>
-                                  <input type="text" class="form-control" id="form-contact-name" name="location" placeholder="이름" required="">
-                              </div>
-                          </div>
-                          <!--end col-md-6-->
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <label for="form-contact-email">이메일주소<em>*</em></label>
-                                  <input type="email" class="form-control" id="form-contact-email" name="location" placeholder="Email" required="">
-                              </div>
-                          </div>
-                          <!--end col-md-6-->
-                      </div>
-                      <!--end row-->
-                      <div class="form-group">
-                          <label for="form-contact-message">문의내용<em>*</em></label>
-                          <textarea class="form-control" id="form-contact-message" rows="8" name="form-contact-message" required="" placeholder="문의하실 내용을 입력해주세요."></textarea>
-                      </div>
-                      <!--end form-group-->
-                      <div id="form-status" class="pull-left"></div>
-                      <div class="form-group pull-right">
-                          <button type="submit" class="btn btn-primary btn-rounded">문의하기</button>
-                      </div>
-                      <!--end form-group-->
-                  </form>
-                  <!--end form-->
-                </div>
-                <!--end col-md-9-->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </div>
-    <!--end page-content-->
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form-contact-name">이름<em>*</em></label>
+                                <input type="text" class="form-control" id="form-contact-name" name="location" placeholder="이름" required="">
+                            </div>
+                        </div>
+                        <!--end col-md-6-->
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form-contact-email">이메일주소<em>*</em></label>
+                                <input type="email" class="form-control" id="form-contact-email" name="location" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <!--end col-md-6-->
+                    </div>
+                    <!--end row-->
+                    <div class="form-group">
+                        <label for="form-contact-message">문의내용<em>*</em></label>
+                        <textarea class="form-control" id="form-contact-message" rows="8" name="form-contact-message" required="" placeholder="문의하실 내용을 입력해주세요."></textarea>
+                    </div>
+                    <!--end form-group-->
+                    <div id="form-status" class="pull-left"></div>
+                    <div class="form-group pull-right">
+                        <button type="submit" class="btn btn-primary btn-rounded">문의하기</button>
+                    </div>
+                    <!--end form-group-->
+                </form>
+                <!--end form-->
+              </div>
+              <!--end col-md-9-->
+          </div>
+          <!--end row-->
+      </div>
+      <!--end container-->
+  </div>
+  <!--end page-content-->
 
-    <%= render "shard/footer"%>
 
+    <%= render "shard/footer" %>
 </div>
-<!--end page-wrapper-->
 <a href="#page-header" class="to-top scroll" data-show-after-scroll="600"><i class="arrow_up"></i></a>
 </body>
