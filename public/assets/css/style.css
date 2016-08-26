@@ -1,4 +1,5 @@
 /*------------------------------------------------------------------
+
 Project:	Accommodo - Accommodation Portal & Real Estate HTML Template
 Version:	1.0
 Last change:	19.04.2016
@@ -15,7 +16,7 @@ Assigned to:	ThemeStarz
 
 [Color codes]
 
-color-default: #fc6472;
+color-default(pink): #fc6472;
 color-dark: #1f1f1f;
 color-black: #000000;
 color-neutral: #f6f6f4;
@@ -2953,7 +2954,7 @@ ul.half li {
 }
 
 #page-footer {
-  color: #fff;
+  color: #202020;
 }
 #page-footer a {
   color: #fff;
